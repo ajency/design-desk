@@ -78,7 +78,7 @@ add_action('admin_init', 'pw_loading_scripts_wrong_again');
 // 		$category = str_replace(" ", "", $category);
 // 		$category = explode(",", $category);
 
-// 		$queried_items = new WP_Query( array( 
+// 		$queried_items = new WP_Query( array(
 // 				'post_type' => 'gallery',
 // 				'orderby' => $orderby,
 // 				'order' => $order,
@@ -90,10 +90,10 @@ add_action('admin_init', 'pw_loading_scripts_wrong_again');
 // 							'field' => 'slug',
 // 							'terms' => $category
 // 						)
-// 					)			
+// 					)
 // 		));
 // 	} else {
-// 		$queried_items = new WP_Query( array( 
+// 		$queried_items = new WP_Query( array(
 // 				'post_type' => 'gallery',
 // 				'orderby' => $orderby,
 // 				'order' => $order,
@@ -110,7 +110,7 @@ add_action('admin_init', 'pw_loading_scripts_wrong_again');
 // 	$output .= '<div class="hb-fw-elements columns-' . $columns . '">';
 
 // 	while ( $queried_items->have_posts() ) : $queried_items->the_post();
-// 		$thumb = get_post_thumbnail_id(); 
+// 		$thumb = get_post_thumbnail_id();
 // 		$image = hb_resize( $thumb, '', $image_dimensions['width'], $image_dimensions['height'], true );
 // 		$full_image = wp_get_attachment_image_src($thumb,'full');
 // 		$gallery_attachments = rwmb_meta('hb_gallery_images', array('type' => 'plupload_image', 'size' => 'full') , get_the_ID());
@@ -136,7 +136,7 @@ add_action('admin_init', 'pw_loading_scripts_wrong_again');
 
 // 		if ( $image )
 // 			$output .= '<img src="' . $image['url'] . '" width="'. $image['width'] .'" height="'. $image['height'] .'" alt="' . get_the_title() . '"/>';
-		
+
 // 		$output .= '<div class="item-overlay-text"'.$custom_color.'>';
 // 		$output .= '<div class="item-overlay-text-wrap">';
 // 		$output .= '<h4><span class="hb-gallery-item-name">THE TITLE' . get_the_title() . '</span></h4>';
@@ -164,10 +164,10 @@ add_action('admin_init', 'pw_loading_scripts_wrong_again');
 // 	$output .= '</div>';
 
 // 	endif;
-	
+
 // 	wp_reset_query();
 
-// 	return $output;  
+// 	return $output;
 // }
 
 	wp_enqueue_script('jquery');
@@ -290,4 +290,8 @@ add_action('admin_init', 'pw_loading_scripts_wrong_again');
     }
     add_action('wp_ajax_my_action', 'my_action');
     add_action('wp_ajax_nopriv_my_action', 'my_action'); // not really needed
+
+	wp_deregister_script( 'hb_scripts');
+	wp_register_script( 'hb_scripts', get_bloginfo('stylesheet_directory'). '/scripts/scripts.js', array('jquery'), NULL, TRUE);
+	wp_enqueue_script( 'hb_scripts' );
 ?>
