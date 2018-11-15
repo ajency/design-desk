@@ -1795,7 +1795,7 @@ ul.social-icons.light li a {
   position: relative;
   z-index: 1;
 }
-@media screen (min-width: 681px) {
+@media screen and (min-width: 681px) {
   #main-content .tabbed_maps .shortcode-map-embed {
     visibility: hidden;
   }
@@ -2223,7 +2223,7 @@ ul.social-icons.light li a {
 .withbgimg, #footer .foot-address .withbgimg {
   width: 90%;
   margin: 20px 0;
-  background: url('http://designdesk.in/wp-content/uploads/sites/13/2016/07/footerlinebgimg.png') no-repeat left top -4px;
+  background: url('../../uploads/2018/11/footerlinebgimg.png') no-repeat left top -4px;
   border: 0;
   border-top: 3px solid #333;
   height: 78px;
@@ -2521,27 +2521,27 @@ ul.social-icons.light li a {
   line-height: 16px;
 }
 .serwitico.exhi-india .content-box.top-icon .box-icon {
-  background: url(http://designdesk.in/wp-content/uploads/sites/13/2016/08/India_smaller.png) no-repeat center center;
+  background: url(../../uploads/2018/11/India_smaller.png) no-repeat center center;
   background-size: cover !important;
 }
 .serwitico.exhi-world .content-box.top-icon .box-icon {
-  background: url(http://designdesk.in/wp-content/uploads/sites/13/2016/08/Worldwide_smaller.png) no-repeat center center;
+  background: url(../../uploads/2018/11/Worldwide_smaller.png) no-repeat center center;
   background-size: cover !important;
 }
 .serwitico.exhi-xdm .content-box.top-icon .box-icon {
-  background: url(http://designdesk.in/wp-content/uploads/sites/13/2016/08/XDM_smaller.png) no-repeat center center;
+  background: url(../../uploads/2018/11/XDM_smaller.png) no-repeat center center;
   background-size: cover !important;
 }
 .serwitico.envi-corp .content-box.top-icon .box-icon {
-  background: url(http://designdesk.in/wp-content/uploads/sites/13/2016/08/Corpscape_smaller.png) no-repeat center center;
+  background: url(../../uploads/2018/11/Corpscape_smaller.png) no-repeat center center;
   background-size: cover !important;
 }
 .serwitico.envi-xd .content-box.top-icon .box-icon {
-  background: url(http://designdesk.in/wp-content/uploads/sites/13/2016/08/360_smaller.png) no-repeat center center;
+  background: url(../../uploads/2018/11/360_smaller.png) no-repeat center center;
   background-size: cover !important;
 }
 .serwitico.envi-retale .content-box.top-icon .box-icon {
-  background: url(http://designdesk.in/wp-content/uploads/sites/13/2016/08/ReTale-2_smaller.png) no-repeat center center;
+  background: url(../../uploads/2018/11/ReTale-2_smaller.png) no-repeat center center;
   background-size: cover !important;
 }
 .serwitico .content-box.top-icon {
