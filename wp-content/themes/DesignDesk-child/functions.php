@@ -294,4 +294,8 @@ add_action('admin_init', 'pw_loading_scripts_wrong_again');
 	wp_deregister_script( 'hb_scripts');
 	wp_register_script( 'hb_scripts', get_bloginfo('stylesheet_directory'). '/scripts/scripts.js', array('jquery'), NULL, TRUE);
 	wp_enqueue_script( 'hb_scripts' );
+
+	wp_deregister_script( 'hb_jquery_custom');
+	wp_register_script( 'hb_jquery_custom', get_bloginfo('stylesheet_directory'). '/scripts/jquery.custom.js', array('jquery'), NULL, TRUE);
+	wp_enqueue_script( 'hb_jquery_custom' );
 ?>
